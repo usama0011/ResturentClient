@@ -1,16 +1,29 @@
 import Head from "next/head";
 import Header from "../../components/Header";
 import PrimaryButton from "../../components/PrimaryButton";
-
+import ImageOne from '../../public/images/one.svg'
+import ImageTwo from '../../public/images/two.svg'
 export default function Contact() {
   return (
     <div>
       <Head>
         <title>Contact</title>
       </Head>
-      <div className=" pt-10">
-        <Header>Nous contacter</Header>
+      <div className="grid grid-cols-1 max-w-6xl mx-auto md:grid-cols-3 lg:grid-cols-3 lg:mt-32 mt-10 md:mt-32">
+      <div className="pt-5 pb-10">
+      <Header>Nous contacter</Header>
+
       </div>
+      <div className="w-full grid col-span-2 bg">
+        <img
+          src="/images/blue.svg"
+          className="w-full h-60"
+          alt=""
+        />
+      </div>
+
+      </div>
+      <div className=" pt-10"></div>
       <div className="max-w-7xl mx-auto">
         <div className=" mt-5 grid grid-cols-1 gap-2 md:grid-cols-2  ">
           <div className="">

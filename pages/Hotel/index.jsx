@@ -13,7 +13,7 @@ export default function Hotel() {
         <div className="w-full md:h-96 lg:h-96 object-cover">
           <img
             src="/images/image5.jpg"
-            className="w-full hover:brightness-75 transition duration-300 md:h-96 lg:h-96 object-cover"
+            className="w-full  hover:brightness-75 transition duration-300 md:h-96 lg:h-96 object-cover"
             alt=""
           />
         </div>

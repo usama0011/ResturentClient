@@ -60,15 +60,15 @@ const SlideOne = () => {
       </di>
       <div className="absolute w-full h-full bg-black/40" />
 
-      <div  className="w-full h-full relative flex flex-col items-center justify-center">
+      <div className="w-full h-full relative flex flex-col items-center justify-center">
         <h1 className="font-semibold md:text-6xl text-center text-white text-3xl font-Snel-BT">
           Bienvenue à Hotely
         </h1>
         <p className="text-lg text-white uppercase mt-4 font-Roboto">
           L'endroit où vous cherchez
         </p>
-        <Link href="/restaurant">
-          <button className="px-6 h-10 bg-white mt-6">
+        <Link href="/chambre">
+          <button className="px-6 h-10 rounded-lg bg-white mt-6">
             Explorer maintenant
           </button>
         </Link>
@@ -92,7 +92,7 @@ const SlideTwo = () => {
         Il y en a pour tous les goûts
         </p>
         <Link href="/Hotel">
-          <button className="px-6 h-10 bg-white mt-6">
+          <button className="px-6  rounded-lg h-10 bg-white mt-6">
             Voir maintenant
           </button>
         </Link>
