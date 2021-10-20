@@ -9,19 +9,8 @@ export default function Contact() {
       <Head>
         <title>Contact</title>
       </Head>
-      <div className="grid grid-cols-1 max-w-6xl mx-auto md:grid-cols-3 lg:grid-cols-3 lg:mt-32 mt-10 md:mt-32">
       <div className="pt-5 pb-10">
-      <Header>Nous contacter</Header>
-
-      </div>
-      <div className="w-full grid col-span-2 bg">
-        <img
-          src="/images/blue.svg"
-          className="w-full h-60"
-          alt=""
-        />
-      </div>
-
+        <Header>Nous contacter</Header>
       </div>
       <div className=" pt-10"></div>
       <div className="max-w-7xl mx-auto">
@@ -33,7 +22,7 @@ export default function Contact() {
                   Nom
                 </label>
                 <input
-                  className="border px-2 py-2 outline-none border-gray-200"
+                  className="border px-2 focus:ring-2 focus:ring-primary-color  py-2 outline-none border-gray-400"
                   type="text"
                   placeholder="nom"
                 />
@@ -43,7 +32,7 @@ export default function Contact() {
                   Prenom
                 </label>
                 <input
-                  className="border border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder="Prenom"
                 />
@@ -53,7 +42,7 @@ export default function Contact() {
                   Adresse Mail
                 </label>
                 <input
-                  className="border border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder=" Adresse Mail"
                 />
@@ -63,7 +52,7 @@ export default function Contact() {
                   Numéro
                 </label>
                 <input
-                  className="border border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder="  Numéro"
                 />
@@ -73,7 +62,7 @@ export default function Contact() {
                   Société
                 </label>
                 <input
-                  className="border   border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color   border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder="Société"
                 />
@@ -85,7 +74,7 @@ export default function Contact() {
                 id=""
                 placeholder="Message..."
                 cols="30"
-                className="border p-3 border-gray-300 w-full outline-none"
+                className="border focus:ring-2 focus:ring-primary-color p-3 border-gray-300 w-full outline-none"
                 rows="9"
               ></textarea>
             </div>
@@ -93,7 +82,7 @@ export default function Contact() {
               Envoyer
             </button>
           </div>
-          <div className="mt-10 mx-3 rounded-sm">
+          <div className="mt-10  md:ml-20 mx-3 rounded-sm">
             <img
               src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
               alt=""

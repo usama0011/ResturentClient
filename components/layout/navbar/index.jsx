@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookmarkAltIcon, DeviceMobileIcon, GlobeIcon, HomeIcon, MenuIcon, NewspaperIcon, OfficeBuildingIcon, SearchIcon, TemplateIcon, UserIcon, XIcon } from "@heroicons/react/outline";
+import { BookmarkAltIcon, DeviceMobileIcon, FlagIcon, GlobeIcon, HomeIcon, MenuIcon, NewspaperIcon, OfficeBuildingIcon, SearchIcon, TemplateIcon, UserIcon, XIcon } from "@heroicons/react/outline";
 import router, { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NavLink from "../../NavLink";
@@ -147,6 +147,13 @@ export default function NavBar() {
               >
                 Carte
               </a>
+              <a
+                onClick={() => router.push("./Beach")}
+                className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+              >
+                Aventure
+              </a>
             </nav>
           </div>
           <div className="hidden md:inline-flex items-center  relative rounded-lg">
@@ -174,7 +181,7 @@ export default function NavBar() {
 }
 const MobileNavigation = () => {
   return (
-    <div className=" py-5">
+    <div className=" py-5 ">
       <ul className="space-y-5 w-full">
         <li className="flex hover:bg-blue-800  transition duration-200 py-2  px-4  items-center space-x-3 w-full">
           <HomeIcon className="h-6" />
@@ -217,11 +224,28 @@ const MobileNavigation = () => {
           </a>
         </li>
         <li className="flex py-2 hover:bg-blue-800  transition duration-200  px-4 items-center space-x-3 w-full">
+          <FlagIcon className="h-6" />
+          <a onClick={() => router.push("./Beach")} href="/Beach">
+             Avennture
+          </a>
+        </li>
+        <li className="flex py-2 hover:bg-blue-800  transition duration-200  px-4 items-center space-x-3 w-full">
           <MapIcon className="h-6" />
           <a onClick={() => router.push("./Map")} href="/Map">
             Carte
           </a>
         </li>
+        <div className="rounded-lg px-3 w-full ">
+          <div className="rounded-lg relative w-full">
+            <SearchIcon className="h-6 absolute  top-2 right-3 pl-1  text-gray-400" />
+            <input
+              type="text"
+              placeholder="Search"
+              className=" w-full rounded-lg outline-none focus:ring-2  focus:ring-primary-color text-gray-800 pl-3 px-6 py-2"
+            />
+          </div>
+          <UserIcon className="h-6 ml-2 hidden md:inline-flex text-white cursor-pointer" />
+        </div>
       </ul>
     </div>
   );

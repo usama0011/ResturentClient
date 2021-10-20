@@ -14,7 +14,7 @@ function index() {
           alt=""
         />
       </div>
-      <div className="w-full   p-2  grid grid-cols-1 md:grid-cols-2 md:place-items-center  mx-auto shadow-xl bg-primary-color ">
+      <div className="w-full   p-2  px-5 grid grid-cols-1 md:grid-cols-2 md:place-items-center  mx-auto shadow-xl bg-primary-color ">
         <div className="grid pt-10 md:pt-0  md:place-items-center">
           <h1 className="text-4xl pl-3 md:pl0 grid place-items-start w-full pb-10 text-white font-bold">
             MAKE YOUR RESERVATION
@@ -65,7 +65,7 @@ function index() {
             {" "}
             <label htmlFor="name">Select Date From</label>
             <input
-              className="px-2 text-black py-2 outline-none border-none text-sm"
+              className="px-2 w-full text-black py-2 outline-none border-none text-sm"
            
               type="date"
               placeholder="Select Date"
@@ -75,7 +75,7 @@ function index() {
             {" "}
             <label htmlFor="name">Select Date To</label>
             <input
-              className="px-2 text-black py-2 outline-none border-none text-sm"
+              className="px-2 w-full text-black py-2 outline-none border-none text-sm"
               type="date"
               placeholder="Rooms"
             />

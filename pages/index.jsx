@@ -126,7 +126,7 @@ export default function Home() {
                   Nom
                 </label>
                 <input
-                  className="border px-2 py-2 outline-none border-gray-200"
+                  className="border px-2 py-2 outline-none focus:ring-2 focus:ring-primary-color border-gray-400"
                   type="text"
                   placeholder="nom"
                 />
@@ -136,7 +136,7 @@ export default function Home() {
                   Prenom
                 </label>
                 <input
-                  className="border border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder="Prenom"
                 />
@@ -146,7 +146,7 @@ export default function Home() {
                   Adresse Mail
                 </label>
                 <input
-                  className="border border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder=" Adresse Mail"
                 />
@@ -156,7 +156,7 @@ export default function Home() {
                   Numéro
                 </label>
                 <input
-                  className="border border-gray-200 px-2 py-2 outline-none"
+                  className="border focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder="  Numéro"
                 />
@@ -166,7 +166,7 @@ export default function Home() {
                   Société
                 </label>
                 <input
-                  className="border   border-gray-200 px-2 py-2 outline-none"
+                  className="border   focus:ring-2 focus:ring-primary-color border-gray-400 px-2 py-2 outline-none"
                   type="text"
                   placeholder="Société"
                 />
@@ -178,7 +178,7 @@ export default function Home() {
                 id=""
                 placeholder="Message..."
                 cols="30"
-                className="border p-3 border-gray-300 w-full outline-none"
+                className="border p-3 border-gray-400 focus:ring-2 focus:ring-primary-color w-full outline-none"
                 rows="9"
               ></textarea>
             </div>
@@ -190,7 +190,7 @@ export default function Home() {
             <img
               src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
               alt=""
-              className=" hover:scale-110  transition-all duration-300  rounded-xl hover:brightness-75 object-contain  h-full md:w-96 w-full mx-auto"
+              className=" hover:scale-110  transition-all duration-300 md:ml-20 rounded-xl hover:brightness-75 object-contain  h-full md:w-96 w-full mx-auto"
             />
           </div>
         </div>

@@ -3,13 +3,8 @@ import Header from "../../components/Header";
 function index() {
     return (
       <div className=" w-full">
-        <div className="grid grid-cols-1 max-w-5xl m-auto md:grid-cols-2 lg:grid-cols-2 mt-32">
-          <div className="pt-5 pr-14 pb-10">
-            <Header>Title of the Page</Header>
-          </div>
-          <div className="w-full   mx-10">
-            <img src="/images/blu.svg" className="w-full h-60" alt="" />
-          </div>
+        <div className="pt-5 pr-14 pb-10">
+          <Header>Title of the Page</Header>
         </div>
         <div className="flex flex-col  mx-auto max-w-3xl items-center justify-center w-full">
           <div className=" w-full">
